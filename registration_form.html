@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<style>
+    legend{
+        background-color: rgba(223, 3, 3, 0.549);
+        color: white;
+    }
+</style>
+<body>
+    <h1><center>Student Registration form</center></h1>
+    <form action="./home.html">
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <label for="">Full Name</label>
+            <input type="text" autofocus required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="">Email</label>
+            <input type="email" pattern="[a-zA-Z\d]+@(gmail|outlook|yahoo)+\.(com|in|gov|at|org)" required> <br>
+            <br>
+            <label for="">Phone No</label>
+            <input type="text" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="">Date of Birth</label>
+            <input type="date"> <br>
+            <br>
+            <label for="">Gender</label>&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender">
+            <label for="">Male</label>
+            <input type="radio" name="gender">
+            <label for="">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend><b>Course selection</b></legend>
+            <label for="">select course</label>
+            <select>
+                <option value="---Select---" disabled selected>---Select---</option>
+                <option value="Dis">Java full stack</option>
+                <option value="Dis">Python full stack</option>
+                <option value="Dis">Data structures & algorithms</option>
+                <option value="Dis">Frontend development</option>
+                <option value="Dis">Machine learning (basics)</option>
+                <option value="Dis">Generative AI</option>
+                <option value="Dis">Data science</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for=""> Preferred Mode of Learning </label>&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="learning">
+            <label for="">Online</label>
+            <input type="radio" name="learning">
+            <label for="">Offline</label> <br>
+            <br>
+            <label for="">Batch-timings</label>
+            <select>
+                <option value="---Select---" disabled selected>---Select---</option>
+                <option value="Dis">Afternoon</option>
+                <option value="Dis">Morning</option>
+                <option value="Dis">Evening</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Agreement & Submission</b></legend>
+            <label for="">Payment</label>
+            <select>
+                <option value="---Select---" disabled selected>---Select---</option>
+                <option value="Dis">Online</option>
+                <option value="Dis">Offline</option>
+            </select>
+        </fieldset>
+        <center><input type="submit" value="Register" style="background-color: orange; color: white; font-size: 18px; padding: 10px 20px; border: none;"></center>
+    </form>
+</body>
+</html>
